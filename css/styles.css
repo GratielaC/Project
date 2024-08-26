@@ -1,0 +1,95 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    background-color: #F7FAFF;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #F7FAFF;
+  }
+  
+  /* Ensure the logo header has the correct alignment and spacing */
+.logo-header {
+    display: flex;
+    align-items: center; /* Vertically centers the logo within the header */
+    justify-content: center; /* Horizontally centers the logo within the header */
+    padding: 10px; /* Adjust padding as necessary */
+}
+
+/* Style the SVG logo */
+.logo-icon {
+    width: 127px; /* Set the specific width as required */
+    height: auto; /* Allows the SVG to scale proportionally */
+    fill: #000; /* Sets the fill color for the SVG, change as necessary */
+    /* Optional: Add scaling for responsiveness */
+    max-width: 100%;
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-icon {
+        width: 100px; /* Reduce the width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-icon {
+        width: 80px; /* Further reduce the width for mobile devices */
+    }
+}
+
+  
+  .header-navigation .top-menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .header-navigation .top-menu-item {
+    list-style: none;
+  }
+  
+  .header-navigation .top-menu-item .link {
+    text-decoration: none;
+    color: #0A224A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    padding: 8px 0;
+  }
+  
+  .header-navigation .top-menu-item .link:hover {
+    border-bottom: 2px solid #0A224A;
+  }
+  
+  .header-mobile-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .header-navigation .top-menu {
+      display: none;
+    }
+  
+    .header-mobile-btn {
+      display: block;
+    }
+  }
+  

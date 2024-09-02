@@ -124,6 +124,26 @@ body, html {
   font-size: 18px;
 }
 
+/* Mobile Menu Logo Styles */
+.mobile-menu-logo {
+  position: absolute; 
+  left: 32px; 
+  top: 40px; 
+  width: 127px; 
+  height: 16px; 
+  opacity: 1; 
+}
+
+/* Adjustments for Mobile */
+@media (max-width: 768px) {
+  .mobile-menu-logo {
+    left: 16px; 
+    top: 36px; 
+    width: 100px; 
+    height: 16px; 
+  }
+}
+
 /* Close Button */
 .menu-close-btn {
   position: absolute;
@@ -132,6 +152,7 @@ body, html {
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 10;
 }
 
 /* Tablet and Mobile Specific Styles */

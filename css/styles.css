@@ -124,10 +124,10 @@ body, html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #F7FAFF; /* Background color for the menu bar */
-  padding: 28px 32px; /* Ensure padding for the menu bar */
+  background-color: #F7FAFF; 
   gap: 0px;
   position: relative;
+  margin-top: 0px;
 }
 
 .menu-list {
@@ -206,7 +206,8 @@ body, html {
   }
 
   .menu-bar {
-    padding: 28px 32px; /* Tablet padding */
+    margin-top: 0px; 
+    margin-bottom: 150px;
   }
 }
 
@@ -239,7 +240,8 @@ body, html {
   }
 
   .menu-bar {
-    padding: 28px 16px; /* Mobile padding */
+    margin-top: 0px; 
+    margin-bottom: 114px;
   }
 }
 
